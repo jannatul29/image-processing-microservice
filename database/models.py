@@ -1,13 +1,12 @@
-from sqlalchemy import Column, Integer, String, Float
+from sqlalchemy import Column, Integer, String, JSON, LargeBinary
 from database.setup import Base
 
-class ImageMetadata(Base):
+class Images(Base):
     __tablename__ = "images"
 
     id = Column(Integer, primary_key=True, index=True)
     filename = Column(String, unique=True)
-    width = Column(Integer)
-    height = Column(Integer)
-    depth = Column(Integer)
-    time_frames = Column(Integer)
-    channels = Column(Integer)
+    image = Column(LargeBinary)
+    image_metadata = Column(JSON)
+    image_attr = Column(JSON, nullable=True)
+    analysis_result = Column(JSON, nullable=True)
