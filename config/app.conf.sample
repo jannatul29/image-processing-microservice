@@ -1,0 +1,14 @@
+# use single quoted string to not face special char problem
+
+server:
+  debug: false
+  env: 'development'
+  allowed_hosts: ['*']
+  csrf_trusted_origins: []
+
+db:
+  url: 'XXX' # sample for postgres: "postgresql://user:password@localhost/table_name", for sqlite: "sqlite:///db_path"
+
+celery:
+  celery_result_backend: 'XXX'
+  celery_broker_url: 'XXX'

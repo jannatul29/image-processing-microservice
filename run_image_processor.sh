@@ -1,0 +1,1 @@
+python commands/multiple_image_processsing_and_store_in_db.py --zipfile data/dynamic/images.zip

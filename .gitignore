@@ -1,0 +1,18 @@
+.idea
+.vscode
+.pylintrc
+*.pyc
+*.log
+env
+venv
+*.idea
+*.vscode
+.DS_Store
+
+docker-compose.yml
+
+# Config file
+config/app.conf
+
+data/dynamic/*
+!data/dynamic/.gitkeep
