@@ -13,6 +13,3 @@ docker-compose.yml
 
 # Config file
 config/app.conf
-
-data/dynamic/*
-!data/dynamic/.gitkeep
